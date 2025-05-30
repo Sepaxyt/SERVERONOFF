@@ -1,27 +1,22 @@
 {
-  "users": [
+  "servers": [
     {
       "id": 1,
       "username": "admin",
-      "password": "hashed_password_here", // Should be bcrypt hashed
-      "email": "admin@example.com",
-      "role": "admin",
+      "password": "hashed_password_here",
       "createdAt": "2023-12-01T00:00:00Z",
       "expiresAt": "2024-12-01T00:00:00Z",
-      "lastLogin": "2023-12-01T12:34:56Z",
       "status": "active",
-      "balance": 10000,
-      "deviceId": "device123",
-      "predictions": []
+      "lastLogin": null,
+      "role": "admin"
     }
   ],
   "settings": {
-    "defaultBalance": 1000,
-    "minPasswordLength": 8,
+    "defaultDuration": 30,
     "passwordRequirements": {
+      "minLength": 8,
       "requireUppercase": true,
-      "requireNumbers": true,
-      "requireSpecialChars": true
+      "requireNumbers": true
     }
   }
 }
