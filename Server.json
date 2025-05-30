@@ -1,28 +1,27 @@
-
 {
   "users": [
     {
       "id": 1,
       "username": "admin",
-      "password": "$2a$10$XgznJh6ZI3yB2V7OEBQ0e.9bTJ7sZqN9z8bW5tYH6kLm9J1wXyJZu", // bcrypt hashed password (admin123)
-      "createdAt": "2023-12-01T10:00:00Z",
-      "expiresAt": "2024-12-01T10:00:00Z",
-      "lastLogin": "2023-12-01T15:30:00Z",
-      "status": "active",
+      "password": "hashed_password_here", // Should be bcrypt hashed
+      "email": "admin@example.com",
       "role": "admin",
+      "createdAt": "2023-12-01T00:00:00Z",
+      "expiresAt": "2024-12-01T00:00:00Z",
+      "lastLogin": "2023-12-01T12:34:56Z",
+      "status": "active",
       "balance": 10000,
-      "deviceId": null,
+      "deviceId": "device123",
       "predictions": []
     }
   ],
   "settings": {
-    "defaultDuration": 30,
-    "startingBalance": 1000,
+    "defaultBalance": 1000,
+    "minPasswordLength": 8,
     "passwordRequirements": {
-      "minLength": 8,
+      "requireUppercase": true,
       "requireNumbers": true,
       "requireSpecialChars": true
-    },
-    "version": "1.0.0"
+    }
   }
 }
